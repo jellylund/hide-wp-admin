@@ -8,7 +8,7 @@ Author: Steve Lund
 License: GPLv2
 */
 
-function disable_dashboard() {
+function hwa_disable_dashboard() {
     if (!is_user_logged_in()) {
         return null;
     }
@@ -17,4 +17,4 @@ function disable_dashboard() {
         exit;
     }
 }
-add_action('admin_init', 'disable_dashboard');
+add_action('admin_init', 'hwa_disable_dashboard');
